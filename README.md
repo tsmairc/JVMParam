@@ -1,6 +1,7 @@
 # JVMParam
 使用jvm参数配置项目参数，以免改配置需要改项目里面的配置文件
 
+## 开发时
 配置文件在classpath:config/test.properties，启动jetty的时候我使用了jvm参数：-DCONFIG_PATH=classpath:config
 
 ```xml
