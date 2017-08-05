@@ -4,15 +4,15 @@
 配置文件在classpath:config/test.properties，启动jetty的时候我使用了jvm参数：-DCONFIG_PATH=classpath:config
 
 ```xml
-	<bean id="propertyPlaceholder" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-		<!-- 使用JVM参数覆盖配置文件的参数 -->
-		<property name="systemPropertiesMode" value="2" />
-		<property name="locations">
-			<list>
-				<value>${CONFIG_PATH}/test.properties</value>
-			</list>
-		</property>
-	</bean>
+<bean id="propertyPlaceholder" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+	<!-- 使用JVM参数覆盖配置文件的参数 -->
+	<property name="systemPropertiesMode" value="2" />
+	<property name="locations">
+		<list>
+			<value>${CONFIG_PATH}/test.properties</value>
+		</list>
+	</property>
+</bean>
 ```
 这样${CONFIG_PATH}实际上就为classpath:config
 
