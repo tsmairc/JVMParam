@@ -5,7 +5,7 @@ import org.springframework.beans.factory.annotation.Value;
 public class TestService{
 	
 	@Value("${test.param}")
-	private String teString;
+	private String teString = "abc";
 	
 	public String test(){
 		System.out.println("this is test servcie");

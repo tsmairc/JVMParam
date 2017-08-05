@@ -11,7 +11,7 @@
 		http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 	<context:component-scan base-package="util"></context:component-scan>
 	
-	<bean id="testService" class="service.TestService" />
+	<bean id="testService" class="service.TestService" ></bean>
 	
 	<bean id="propertyPlaceholder" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<!-- 使用JVM参数覆盖配置文件的参数 -->

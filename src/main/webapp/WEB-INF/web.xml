@@ -6,7 +6,7 @@
 	xmlns="http://java.sun.com/xml/ns/javaee"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	version="3.1">
-	<display-name>appDemo</display-name>
+	<display-name>JVMParam</display-name>
 	
 	<!-- spring配置文件开始 -->
 	<context-param>
@@ -24,7 +24,7 @@
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>classpath:spring/ApplicationContext-mvc.xml</param-value>
+			<param-value>classpath*:spring/ApplicationContext-mvc.xml</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
 	</servlet>
