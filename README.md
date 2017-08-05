@@ -36,8 +36,8 @@ public class TestService{
 ## 真实环境中部署 -- tomcat
 如果在tomcat上部署的话，一般配置文件放在tomcat服务器外面。<br/>
 -----<br/>
-   --properties<b/r>
-   --tomcat<br/>
+--------properties<br/>
+--------tomcat<br/>
 tomcat的路径为/home/mrc/soft/tomcat8,配置文件的路径为/home/mrc/soft/properties<br/>
 这样的话在tomcat的bin下的catalina.sh中配置，配置在文件开头加入下面语句<br/>
 JAVA_OPTS="$JAVA_OPTS -DCONFIG_PATH=file:/home/mrc/soft/properties"<br/>
