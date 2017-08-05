@@ -41,5 +41,6 @@ JAVA_OPTS="$JAVA_OPTS -DCONFIG_PATH=file:/home/mrc/soft/properties"<br/>
 然后将配置文件放在上面配置的目录，再启动tomcat<br/>
 这样的好处是，不用对应不同的部署方案再重新打包，只需要改tomcat外部的配置文件。
 
-
+## 总结
+本身项目在jetty中运行成功，但放在tomcat中测试就不可以，最后折腾了很久，发现是jar包冲突了，在pom中排除冲突的jar就可以了。
 
